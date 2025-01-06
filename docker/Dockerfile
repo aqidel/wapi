@@ -9,6 +9,5 @@ COPY --chown=$user:$group . /var/www/wapi
 
 RUN cd /var/www/wapi && composer install
 
-EXPOSE 9000
 USER $user
 CMD ["php-fpm"]
